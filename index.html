@@ -172,26 +172,13 @@
     .btn--ghost:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 
     /* ───────────────────────────────────────────────────────────────
-       Section heads — number sigil + headline only
+       Section heads — headline only
     ─────────────────────────────────────────────────────────────── */
     .sec-head {
-      display: grid;
-      grid-template-columns: 140px 1fr;
-      gap: var(--s-6);
-      align-items: end;
       padding-bottom: var(--s-5);
       border-bottom: 2px solid var(--ink);
       margin-bottom: var(--s-7);
     }
-    .sec-head .num {
-      font-family: var(--mono);
-      font-size: 13px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--ink);
-      white-space: nowrap;
-    }
-    .sec-head .num strong { color: var(--accent-deep); }
     .sec-head h2 { margin: 0; max-width: 22ch; }
 
     /* ───────────────────────────────────────────────────────────────
@@ -419,7 +406,6 @@
     ─────────────────────────────────────────────────────────────── */
     @media (max-width: 1000px) {
       nav.primary ul { display: none; }
-      .sec-head { grid-template-columns: 1fr; gap: var(--s-2); }
       .pillars { grid-template-columns: 1fr; }
       .pillar { border-right: 0; border-bottom: 1px solid var(--rule); }
       .pillar:last-child { border-bottom: 0; }
@@ -476,7 +462,6 @@
   <section id="problem">
     <div class="container">
       <div class="sec-head">
-        <div class="num"><strong>§ 02</strong> · Problem</div>
         <h2>If only you had the time to automate your work.</h2>
       </div>
 
@@ -497,7 +482,6 @@
   <section id="what">
     <div class="container">
       <div class="sec-head">
-        <div class="num"><strong>§ 03</strong> · What we do</div>
         <h2>We build the agents. Your team keeps its agency.</h2>
       </div>
 
@@ -534,7 +518,6 @@
   <section id="who">
     <div class="container">
       <div class="sec-head">
-        <div class="num"><strong>§ 04</strong> · Team</div>
         <h2>Operators who built the tools we wished existed.</h2>
       </div>
 
